@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Регистрация</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"> </script>
+</head>
+<body>
+<h2 align="center"> Форма регистрации </h2>
+<table border="0" cellpadding="5" cellspacing="0" valign="top" >
+ 
+<form name="form2" method="post" action="filephp.php">
+<tr ><td align="left" valign="top">  Фамилия </td>
+<td> <input type="text" name="sur" size="20" maxlength="15"></td></tr>
+
+<tr><td align="left" valign="top"> Имя </td>
+<td> <input type="text" name="nam" size="20" maxlength="10"></td></tr>
+
+
+<tr><td align="left" valign="top"> Пол </td>
+<td><input type="radio" name="sex" value="men"> Мужской
+<input type="radio" name="sex" value="woman"> Женский </td></tr>
+
+<tr><td align="left" valign="top"> Дата рождения </td>
+<td> <input type="date" name="calendar" ></td></tr>
+
+<tr><td align="left" valign="top"> Email </td>
+<td><input type="text" name="email" maxlength="20"></td> </tr>
+
+<tr><td align="left" valign="top"> Пароль </td>
+<td><input type="password" name="pass" maxlength="15"></td></tr>
+
+<tr><td align="left"align="top"> Повтор пароля </td>
+<td><input type="password" name="pass2" maxlength="15"></td></tr>
+
+<tr><td align="left" valign="top"> Знание языка </td>
+<td><input type="checkbox" name="lan1" value="rus">русский
+<input type="checkbox" name="lan2" value="ukr">украинский
+<input type="checkbox" name="lan3" value="eng">английский
+<input type="checkbox" name="lan4" value="fra">французский
+<input type="checkbox" name="lan5" value="ger">немецкий</td></tr>
+
+<tr><td align="left" valign="top"> Увлечения <br>(выбирайте с нажатой клавишей Ctrl)</br></td>
+<td> <select name="enjoy_m[]" size="3" multiple> 
+<option value="игры"> Игры
+<option value="комп"> Компьютеры
+<option value="музыка"> Музыка
+<option value="книги"> Книги
+<option value="спорт"> Спорт
+<option value="животные"> Животные
+ </select></td></tr>
+
+<tr><td align="left" valign="top"> Личные качества </td>
+<td><textarea rows="5" cols="50" wrap="virtual"></textarea></td></tr>
+
+<tr><td align="left" valign="top"> <label for="load"> Выберите файл для аватара: </label> </td>
+<td> <input type="file" name ="load" size="30"> </td></tr>
+
+<tr><td valign="top"></td>
+<td><input type="submit" value="Зарегистрироваться"  onclick="location.href='filephp.php'"> <input type="reset" value="Отмена"> <input type="button" name="but" value="Назад" onclick="location.href='site.html'"> </td></tr>
+
+
+</form>
+</table>
+
+</body></html>
